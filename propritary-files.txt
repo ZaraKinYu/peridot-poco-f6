@@ -113,29 +113,22 @@ vendor/lib64/libar-gsl.so
 vendor/lib64/libarmemlog.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudiofeaturestats.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libcustomva_intf.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libhotword_intf.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
-vendor/lib64/libmis6.so
-vendor/lib64/libmisfpsop.so
-vendor/lib64/libmisops.so
-vendor/lib64/libmisoundfx_ext.so
-vendor/lib64/libmisoundsa.so
-vendor/lib64/libmisoundsa_fx.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so
+system_ext/lib64/libaudiocloudctrl.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
@@ -143,29 +136,14 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libdownmix.so
 vendor/lib64/soundfx/libdynproc.so
 vendor/lib64/soundfx/libeffectproxy.so
 vendor/lib64/soundfx/libhapticgenerator.so
-vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libmisoundfx_n2.so
-vendor/lib64/soundfx/libozoprocessing.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libreverbwrapper.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libspatializer_fx.so
-vendor/lib64/soundfx/libspatializer.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
-vendor/lib64/soundfx/libvolumelistener.so
-
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
@@ -196,20 +174,10 @@ vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
-
-# CIT Sensor
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
-odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
-odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
-odm/etc/cit_param_config.json
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
