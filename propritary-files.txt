@@ -151,14 +151,21 @@ vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libldnhncr.so
 vendor/lib64/soundfx/libmisoundfx_n2.so
+vendor/lib64/soundfx/libozoprocessing.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libreverbwrapper.so
+vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libspatializer_fx.so
 vendor/lib64/soundfx/libspatializer.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libspatializer_fx.so
 vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/soundfx/libvisualizer.so
+vendor/lib64/soundfx/libvolumelistener.so
+
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
