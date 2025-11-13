@@ -1,58 +1,58 @@
-vendor/lib64/libmialgoenginecustom.so: file not found
-vendor/lib64/libmibokeh_845_video.so: file not found
-vendor/lib64/libmicamera_adapter.so: file not found
-vendor/lib64/libmidebuggerdimpl_vendor.so: file not found
-vendor/lib64/libmifaceempty.so: file not found
-vendor/lib64/libminikin.xiaomi.so: file not found
-vendor/lib64/libmiocr.so: file not found
-vendor/lib64/libmiphone_capture_bokeh.so: file not found
-vendor/lib64/libmiphone_capture_depth.so: file not found
-vendor/lib64/libmiphone_preview_bokeh.so: file not found
-vendor/lib64/libmiphone_preview_depth.so: file not found
-vendor/lib64/libmips.so: file not found
-vendor/lib64/libmirf.so: file not found
-vendor/lib64/libmis_platform.so: file not found
-vendor/lib64/libmis_plugin_dummy.so: file not found
-vendor/lib64/libmis_plugin_gme.so: file not found
-vendor/lib64/libmis_plugin_his.so: file not found
-vendor/lib64/libmis_plugin_morpho.so: file not found
-vendor/lib64/libmis_plugin_qisv2.so: file not found
-vendor/lib64/libmis_plugin_qisv3.so: file not found
-vendor/lib64/libmmcamera_cac.so: file not found
-vendor/lib64/libmorpho_ubwc.so: file not found
-vendor/lib64/libmorpho_video_stabilizer.so: file not found
-vendor/lib64/libofflinedebugdata.so: file not found
-vendor/lib64/libofflinefeatureintf.so: file not found
-vendor/lib64/libomp.so: file not found
-vendor/lib64/libopencv3a.so: file not found
-vendor/lib64/libportrait_repair_qnn.so: file not found
-vendor/lib64/libqll.so: file not found
-vendor/lib64/libqsegnet.so: file not found
-vendor/lib64/libqshcamera.so: file not found
-vendor/lib64/libremosaic_wrapper.so: file not found
-vendor/lib64/libremosaiclib.so: file not found
-vendor/lib64/librendercore.so: file not found
-vendor/lib64/librfs_warp.so: file not found
-vendor/lib64/librmsclib1.so: file not found
-vendor/lib64/libruy.so: file not found
-vendor/lib64/libsagt.so: file not found
-vendor/lib64/libsamplefilterplugin.so: file not found
-vendor/lib64/libsfeShiftExtrapolation.so: file not found
-vendor/lib64/libshadowhook.so: file not found
-vendor/lib64/libsnpe_config.so: file not found
-vendor/lib64/libubifocus.so: file not found
-vendor/lib64/libubwcp.so: file not found
-vendor/lib64/libultrahdr.so: file not found
-vendor/lib64/libvideodiedobserver_vendor.so: file not found
-vendor/lib64/libvideoml.so: file not found
-vendor/lib64/libwa_widelens_undistort.so: file not found
-vendor/lib64/libwrapper_dlengine.so: file not found
-vendor/lib64/libxmi_hdr_checker.so: file not found
-vendor/lib64/libxmi_slow_motion_mein.so: file not found
-vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so: file not found
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so: file not found
-vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-impl.so: file not found
-vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk_platform.so: file not found
-vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so: file not found
-vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so: file not found
-vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so: file not found
+vendor/lib64/libmialgoenginecustom.so
+vendor/lib64/libmibokeh_845_video.so
+vendor/lib64/libmicamera_adapter.so
+vendor/lib64/libmidebuggerdimpl_vendor.so
+vendor/lib64/libmifaceempty.so
+vendor/lib64/libminikin.xiaomi.so
+vendor/lib64/libmiocr.so
+vendor/lib64/libmiphone_capture_bokeh.so
+vendor/lib64/libmiphone_capture_depth.so
+vendor/lib64/libmiphone_preview_bokeh.so
+vendor/lib64/libmiphone_preview_depth.so
+vendor/lib64/libmips.so
+vendor/lib64/libmirf.so
+vendor/lib64/libmis_platform.so
+vendor/lib64/libmis_plugin_dummy.so
+vendor/lib64/libmis_plugin_gme.so
+vendor/lib64/libmis_plugin_his.so
+vendor/lib64/libmis_plugin_morpho.so
+vendor/lib64/libmis_plugin_qisv2.so
+vendor/lib64/libmis_plugin_qisv3.so
+vendor/lib64/libmmcamera_cac.so
+vendor/lib64/libmorpho_ubwc.so
+vendor/lib64/libmorpho_video_stabilizer.so
+vendor/lib64/libofflinedebugdata.so
+vendor/lib64/libofflinefeatureintf.so
+vendor/lib64/libomp.so
+vendor/lib64/libopencv3a.so
+vendor/lib64/libportrait_repair_qnn.so
+vendor/lib64/libqll.so
+vendor/lib64/libqsegnet.so
+vendor/lib64/libqshcamera.so
+vendor/lib64/libremosaic_wrapper.so
+vendor/lib64/libremosaiclib.so
+vendor/lib64/librendercore.so
+vendor/lib64/librfs_warp.so
+vendor/lib64/librmsclib1.so
+vendor/lib64/libruy.so
+vendor/lib64/libsagt.so
+vendor/lib64/libsamplefilterplugin.so
+vendor/lib64/libsfeShiftExtrapolation.so
+vendor/lib64/libshadowhook.so
+vendor/lib64/libsnpe_config.so
+vendor/lib64/libubifocus.so
+vendor/lib64/libubwcp.so
+vendor/lib64/libultrahdr.so
+vendor/lib64/libvideodiedobserver_vendor.so
+vendor/lib64/libvideoml.so
+vendor/lib64/libwa_widelens_undistort.so
+vendor/lib64/libwrapper_dlengine.so
+vendor/lib64/libxmi_hdr_checker.so
+vendor/lib64/libxmi_slow_motion_mein.so
+vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
+vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-impl.so
+vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk_platform.so
+vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
