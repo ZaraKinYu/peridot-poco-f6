@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/houji
+DEVICE_PATH := device/xiaomi/warm
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 BUILD_BROKEN_DUP_RULES := true
@@ -33,8 +33,9 @@ AB_OTA_PARTITIONS += \
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv9-a
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := kryo300
 
@@ -61,7 +62,7 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := pineapple
+TARGET_BOOTLOADER_BOARD_NAME := pitti
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -69,14 +70,11 @@ TARGET_USES_UEFI := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Display
-TARGET_SCREEN_DENSITY := 480
+TARGET_SCREEN_DENSITY := 320
 
 # Dtb/o
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
-
-# Init
-TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_8650
 
 # Init Boot
 BOARD_INIT_BOOT_HEADER_VERSION := 4
@@ -101,7 +99,7 @@ BOARD_BOOTCONFIG := \
     androidboot.hypervisor.protected_vm.supported=0 \
     androidboot.load_modules_parallel=true \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.usbcontroller=4e00000.dwc3 \
     androidboot.vendor.qspa=true \
     androidboot.console=0
 
@@ -145,7 +143,7 @@ $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-l
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := pineapple
+TARGET_BOARD_PLATFORM := pitti
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
@@ -157,18 +155,12 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-
-# Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Security patch level
 BOOT_SECURITY_PATCH := 2025-03-27
@@ -190,15 +182,10 @@ DEVICE_MATRIX_FILE := \
 
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest_xiaomi.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest_pineapple.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_pitti.xml \
     $(DEVICE_PATH)/configs/media/c2_manifest_vendor.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
-
-# Sensors
-SOONG_CONFIG_NAMESPACES += XIAOMI_SENSORS
-SOONG_CONFIG_XIAOMI_SENSORS += UDFPS_PATH
-SOONG_CONFIG_XIAOMI_SENSORS_UDFPS_PATH := /sys/class/touch/touch_dev/fod_press_status
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -247,4 +234,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/houji/BoardConfigVendor.mk
+-include vendor/xiaomi/warm/BoardConfigVendor.mk
